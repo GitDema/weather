@@ -40,7 +40,8 @@ class App extends Component {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods":
           "GET, POST, PATCH, PUT, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token"
+        "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token",
+        "Content-Type": "application/json"
       },
       url: `http://api.openweathermap.org/data/2.5/weather?q=${region}&appid=${weather_api_key}&units=metric`
     })
