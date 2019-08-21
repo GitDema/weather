@@ -1,0 +1,29 @@
+.weather-data {
+  padding: 0 1em;
+}
+
+.weather-data-main {
+  display: flex;
+  align-items: center;
+}
+
+.weather-data-main p {
+  text-transform: capitalize;
+}
+
+.weather-data-list_item {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+}
+
+.weather-data-list_item-title span {
+  color: #fff;
+  font-size: 12px;
+}
+
+.weather-data-list_item-value {
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+}
