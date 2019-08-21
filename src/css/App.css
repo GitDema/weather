@@ -62,3 +62,35 @@ ol {
   letter-spacing: 1px;
   background-color: #3ea52c;
 }
+
+.saved-list__item {
+  display: flex;
+  align-items: center;
+}
+
+.cross-wrap {
+  height: 20px;
+  margin-left: 1em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cross {
+  position: relative;
+  width: 18px;
+  height: 2px;
+  background: #af0707;
+  transform: rotate(45deg);
+}
+
+.cross:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 18px;
+  height: 2px;
+  background: #af0707;
+  transform: rotate(-90deg);
+}
