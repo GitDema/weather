@@ -36,6 +36,12 @@ class App extends Component {
 
     axios({
       method: "get",
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods":
+          "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token"
+      },
       url: `http://api.openweathermap.org/data/2.5/weather?q=${region}&appid=${weather_api_key}&units=metric`
     })
       .then(res => {
